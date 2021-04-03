@@ -6,7 +6,7 @@
     <div class="container">
         <form method="POST" class="form-register" style="color:white">
             {{ form.hidden_tag() }}
-            <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt="">
+            <img class="mb-4" src="https://www.zohowebstatic.com/sites/default/files/styles/product-home-page/public/marketplace_logo.png" alt="">
             <h1 class="h3 mb-3 font-weight-normal">
                 Please Create your Account
             </h1>
@@ -23,7 +23,14 @@
             {{ form.password2.label() }}
             {{ form.password2(class="form-control", placeholder=" Confirm Password", autocomplete="off") }}
             <br>
+
+            <div class="checkbox mb-3">
+                <h6>Already have an account?</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+             </div>
+ 
             {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
 
         </form>
     </div>
